@@ -9,12 +9,11 @@ Simple html error page templates. Before upload on your own server, you should c
 If you use google analytics on your page, you should change google analytics tracking code in the HTML header section.
 
 ```
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA--XXXXXXXXX-X"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() { dataLayer.push(arguments); }
 	gtag('js', new Date());
-
 	gtag('config', 'UA-XXXXXXXXX-X');
 </script>
 ```
@@ -26,7 +25,7 @@ Change author, add links etc.
 ```
 <footer class="footer">
 	<div class="container text-center">
-		<span>&copy; 2018 Tomáš Večeřa</span>
+		<span>&copy; <script>document.write(new Date().getUTCFullYear());</script> Tomáš Večeřa</span>
 	</div>
 </footer>
 ```
